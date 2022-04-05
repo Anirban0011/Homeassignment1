@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" ,initial scale="1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Metador Inc./Mathematics</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+    .header {
+      min-height: 100vh;
+      width: 100%;
+      background-image: linear-gradient(
+          rgba(4, 9, 30, 0.7),
+          rgba(4, 9, 30, 0.7)
+        ),
+        url(https://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/s3/field/field_image_main/b_AllSoulsquad.jpg?itok=tTcH-5ix);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+    nav {
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav img {
+      width: 120px;
+    }
+    .nav-links {
+      flex: 1;
+      text-align: right;
+    }
+    .nav-links ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+      position: relative;
+    }
+    .nav-links ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .nav-links ul li::after {
+      content: "";
+      width: 0%;
+      height: 2px;
+      background: #36f482;
+      display: block;
+      margin: auto;
+    }
+    .nav-links ul li:hover::after {
+      width: 100%;
+      transition: 0.5s;
+    }
+    .text-box {
+      width: 90%;
+      position: absolute;
+      color: #fff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .text-box h1 {
+      font-size: 62px;
+    }
+    .text-box p {
+      margin: 10px 0 40px;
+      font-size: 16px;
+      color: #fff;
+    }
+    .hero-btn {
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid #fff;
+      padding: 12px 34px;
+      font-size: 13px;
+      background: transparent;
+      position: relative;
+      cursor: pointer;
+    }
+    .hero-btn:hover {
+      border: solid 1px #36f4f1;
+      background: #36f4f1;
+      transition: 1s;
+    }
+    .row {
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .cta {
+      margin: 100px auto;
+      width: 80%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(https://i.postimg.cc/T3MSSy7F/banner2.jpg);
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .footer {
+      width: 100%;
+      text-align: center;
+      padding: 30px 0;
+    }
+    .footer h4 {
+      margin-bottom: 25px;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .icons img {
+      width: 20px;
+      height: 20px;
+      margin: 0 13px;
+      cursor: pointer;
+      padding: 18px 0;
+    }
+    .sub-header {
+      height: 50vh;
+      width: 100%;
+      background-image: linear-gradient(
+          rgba(4, 9, 30, 0.7),
+          rgba(4, 9, 30, 0.7)
+        ),
+        url(https://thumbs.dreamstime.com/b/old-book-flying-letters-magic-light-background-bookshelf-library-ancient-books-as-symbol-knowledge-history-218640948.jpg);
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      color: #fff;
+    }
+    .sub-header h1 {
+      margin-top: 100px;
+    }
+    .about-us {
+      width: 80%;
+      margin: auto;
+      padding-top: 80px;
+      padding-bottom: 50px;
+    }
+
+    .about-us h1 {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+    .about-col {
+      width: 100%;
+    }
+    .about-col h1 {
+      padding-top: 0;
+    }
+
+    .about-col img {
+      height: 90%;
+      width: 90%;
+    }
+
+    .about-col p {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .row h1 {
+      text-align: center;
+      display: block;
+    }
+
+    .row p {
+      margin-left: 35px;
+    }
+
+    .row p b {
+      font-size: 20px;
+    }
+
+    .row p h1 {
+      margin-left: 35px;
+    }
+    .about-us ul li {
+      margin-left: 35px;
+    }
+
+    .about-us ul ul li {
+      margin-left: 55px;
+    }
+    .green-btn {
+      border: 1px solid #36f4a5;
+      background: transparent;
+      color: #36f488;
+    }
+    .green-btn:hover {
+      color: #fff;
+    }
+  </style>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <div class="nav-links">
+          <ul>
+            <li><a href="Q5home.html">HOME</a></li>
+            <li><a href="">FEE</a></li>
+            <li><a href="">RAISE COMPLAINT</a></li>
+            <li><a href="">OUR STUDENTS</a></li>
+            <li><a href="">CUSTOMER CARE</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1>Discrete Mathematics</h1>
+    </section>
+    <section class="about-us">
+      <h1>Overview</h1>
+      <div class="row">
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/I/6138xXCrruL.jpg"
+          width="300"
+        />
+
+        <p>
+          Elements of Discrete Mathematics is a comprehensive book undergraduate
+          students of Computer Science Engineering. The book comprises chapters
+          on sets and permutations, permutations, combinations and discrete
+          probability, relations and functions, graphs and planar graphs,
+          modeling computation, analysis of algorithms and recurrence relations
+          and recursive algorithms. In addition, the book consists of several
+          solved examples, practice problems, illustrations and algorithms to
+          understand the concepts better. This book is essential for candidates
+          preparing for various competitive examinations like GATE and IES.
+        </p>
+        <br />
+        <br />
+
+        <br />
+      </div>
+      <br />
+      <br />
+      <br /><br />
+
+      <h1>Table of Contents</h1>
+      <br />
+      <ul>
+        <li>Sets and Propositions</li>
+        <br />
+        <ul>
+          <li>Introduction</li>
+          <li>Combination of Sets</li>
+          <li>Finite and Infinite Sets</li>
+          <li>Uncountably Infinite Sets</li>
+        </ul>
+        <br />
+
+        <li>Computability and Formal Languages</li>
+        <br />
+        <ul>
+          <li>Propositions and Logical Operations</li>
+          <li>Conditional Statements</li>
+          <li>Methods of Proof</li>
+          <li>Mathematical Induction</li>
+        </ul>
+        <br />
+        <li>Computability and Formal Languages</li>
+        <br />
+        <ul>
+          <li>Propositions and Logical Operations</li>
+          <li>Conditional Statements</li>
+          <li>Methods of Proof</li>
+          <li>Mathematical Induction</li>
+        </ul>
+        <br />
+        <li>Permutations, Combinations and Discrete Probability</li>
+        <br />
+        <ul>
+          <li>Permutations</li>
+          <li>Combinations</li>
+          <li>Pigeonhole Principle</li>
+          <li>Elements of Probability</li>
+          <li>Recurrence Relations</li>
+          <li>Relations and Digraphs</li>
+          <li>Product Sets and Partitions</li>
+          <li>Relations and Digraphs</li>
+        </ul>
+        <br />
+        <li>Trees and Graphs</li>
+        <br />
+        <ul>
+          <li>Trees</li>
+          <li>Labeled Trees</li>
+          <li>Tree Searching</li>
+          <li>Undirected Trees</li>
+          <li>Minimal Spanning Trees</li>
+          <li>Topics in Graph Theory</li>
+          <li>Graphs</li>
+          <li>Euler Paths and Circuits</li>
+          <li>Hamiltonian Paths and Circuit</li>
+          <li>Transport Networks</li>
+        </ul>
+
+        <br />
+      </ul>
+      <div class="row">
+        <a
+          href="https://www.amazon.in/Elements-Discrete-Mathematics-Computer-Oriented/dp/1259006395"
+          class="hero-btn green-btn"
+          >Buy Book</a
+        >
+      </div>
+
+      <div class="row"></div>
+
+      <br />
+      <h1></h1>
+    </section>
+    <section class="footer">
+      <h4>Follow Us</h4>
+      <p></p>
+      <div class="icons">
+        <img
+          src="https://image.similarpng.com/very-thumbnail/2021/01/Facebook-icon-design-on-transparent-background-PNG.png"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+        />
+        <img
+          src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"
+        />
+      </div>
+      <p><i>©MetaDor Inc. 2022 , All Right Reserved</i></p>
+    </section>
+  </body>
+</html>
